@@ -1,0 +1,26 @@
+Parameters
+	10node_sqr_notests
+	/home/miles/workspace/Summer Project/BatchRunner/experiments/15-08-29 102028_10node_sqr_notests
+GA Length
+	total_runs=50
+	input_generations_per_run=0
+	model_generations_per_run=4
+GA Properties
+	population=100
+	mutation_rate=0.4
+	crossover_probability=0.05
+	deme_size=5
+Net Properties
+	target_network_file=/home/miles/workspace/Summer Project/BatchRunner/networks/10nodefixednetwork.json
+	evolved_network_file=/home/miles/workspace/Summer Project/BatchRunner/networks/10nodeevolvablenetwork.json
+	time_step=0.01
+	run_length_steps=500
+	network_input_index=0
+	network_output_index=9
+Input Properties
+	input_provider_classname=SQUARE
+	parameters=[0.1, 0.1]
+Model Properties
+	derivative_depth=5
+	exponential_penalty=2
+

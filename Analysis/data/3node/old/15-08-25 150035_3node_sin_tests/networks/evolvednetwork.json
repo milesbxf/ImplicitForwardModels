@@ -1,0 +1,63 @@
+{
+	"metadata": {
+		"author": "Miles Bryant",
+		"description": "A two neuron oscillating network with fixed values.",
+		"date" : "June2015"
+	},
+	"ranges": [
+		{
+			"name": "range",
+		"tauRange" : { 
+				"low" : 0.8,
+				"high": 3
+			},
+			"biasRange" : {
+				"low" : -4.0,
+				"high" : 4.0
+			},
+			"gainRange" : {
+				"low" : 1.0,
+				"high" : 10.0
+			},
+			"weightRange" : {
+				"low" : -22,
+				"high" : 22
+			}
+		}
+	],
+	"layers": [
+		{
+    		"name" : "Neurons",
+    		"neurons" :
+    		[
+    			{
+					"name" : "n1",
+					"range" : "range",
+					"tau" : "g0",
+					"bias" : "0",
+					"gain" : "1",
+					"conns" : [ "n1", "n2" ],
+					"weights" : [ "g3", "g4" ]
+				},
+				{
+					"name" : "n2",
+					"range" : "range",
+					"tau" : "g1",
+					"bias" : "0",
+					"gain" : "1",
+					"conns" : [ "n2","n3" ],
+					"weights" : [ "g5","g6" ]
+    			},
+				{
+					"name" : "n3",
+					"range" : "range",
+					"tau" : "g2",
+					"bias" : "0",
+					"gain" : "1",
+					"conns" : [ "n3", "n1" ],
+					"weights" : [ "g7","g8" ]
+    			}
+			]
+		}
+	]
+}

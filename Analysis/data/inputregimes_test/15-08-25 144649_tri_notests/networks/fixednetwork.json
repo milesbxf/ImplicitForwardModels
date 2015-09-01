@@ -1,0 +1,56 @@
+ {
+	"metadata" : {
+		"description" : "A simple two neuron oscillating network.",
+		"author" : "Miles",
+		"date" : "June 2015"
+	},
+	"ranges" : 
+	[
+			{
+				"name" : "range",
+				"tauRange" : {
+					"low" : 1,
+					"high" : 50
+		    	},
+			    "biasRange" : {
+			    	"low" : -16,
+			    	"high" : 50
+			    },
+				"gainRange" : {
+					"low" : 1,
+					"high" : 10
+			    },
+			    "weightRange" : {
+					"low" : -5,
+					"high" : 5
+			    }
+			}
+	],
+	"layers" :
+	[
+		{
+    		"name" : "Neurons",
+    		"neurons" :
+    		[
+    			{
+					"name" : "n1",
+					"range" : "range",
+					"tau" : "1",
+					"bias" : "0",
+					"gain" : "1",
+					"conns" : [ "n1", "n2" ],
+					"weights" : [ "-20", "20" ]
+				},
+				{
+					"name" : "n2",
+					"range" : "range",
+					"tau" : "2.5",
+					"bias" : "0",
+					"gain" : "1",
+					"conns" : [ "n2", "n1" ],
+					"weights" : [ "-20","18" ]
+    			}
+			]
+		}
+	]
+}

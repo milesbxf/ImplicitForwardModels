@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry exported="true" kind="lib" path="/home/miles/workspace/Summer Project/MB EASy Project/lib/guava-18.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/miles/workspace/Summer Project/MB EASy Project/lib/jackson-core-2.5.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/miles/workspace/Summer Project/MB EASy Project/lib/jackson-annotations-2.5.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/miles/workspace/Summer Project/MB EASy Project/lib/jackson-databind-2.5.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/miles/workspace/Summer Project/MB EASy Project/lib/jackson-dataformat-csv-2.4.1.jar"/>
+	<classpathentry exported="true" kind="lib" path="/home/miles/workspace/Summer Project/MB EASy Project/lib/jmockit.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

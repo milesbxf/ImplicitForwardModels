@@ -1,0 +1,26 @@
+Parameters
+	sqr_0.15_0.1
+	/home/miles/workspace/Summer Project/BatchRunner/experiments/15-08-24 182025_sqr_0.15_0.1
+GA Length
+	total_runs=10
+	input_generations_per_run=1
+	model_generations_per_run=10
+GA Properties
+	population=100
+	mutation_rate=0.4
+	crossover_probability=0.05
+	deme_size=5
+Net Properties
+	target_network_file=/home/miles/workspace/Summer Project/BatchRunner/fixednetwork.json
+	evolved_network_file=/home/miles/workspace/Summer Project/BatchRunner/evolvablenetwork.json
+	time_step=0.01
+	run_length_steps=500
+	network_input_index=0
+	network_output_index=1
+Input Properties
+	input_provider_classname=SQUARE
+	parameters=[0.15, 0.1]
+Model Properties
+	derivative_depth=5
+	exponential_penalty=2
+

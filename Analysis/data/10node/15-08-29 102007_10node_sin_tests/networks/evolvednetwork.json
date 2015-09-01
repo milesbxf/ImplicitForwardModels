@@ -1,0 +1,125 @@
+{
+	"metadata": {
+		"author": "Miles Bryant",
+		"description": "A two neuron oscillating network with fixed values.",
+		"date" : "June2015"
+	},
+	"ranges": [
+		{
+			"name": "range",
+		"tauRange" : { 
+				"low" : 1,
+				"high": 2
+			},
+			"biasRange" : {
+				"low" : -4.0,
+				"high" : 4.0
+			},
+			"gainRange" : {
+				"low" : 1.0,
+				"high" : 10.0
+			},
+			"weightRange" : {
+				"low" : -30,
+				"high" : 30
+			}
+		}
+	],
+	"layers": [
+		{
+    		"name" : "Neurons",
+    		"neurons" :
+    		[
+    			{
+					"name" : "n1",
+					"range" : "range",
+					"tau" : "g0",
+					"bias" : "0",
+					"gain" : "10",
+					"conns" : [ "n1", "n2", "n3", "n4" ],
+					"weights" : [ "g10", "g11" , "g12", "g13" ]
+				},
+				{
+					"name" : "n2",
+					"range" : "range",
+					"tau" : "g1",
+					"bias" : "0",
+					"gain" : "1",
+					"conns" : [ "n2", "n3", "n4", "n5" ],
+					"weights" : [ "g14","g15" , "g16", "g17"]
+    			},
+				{
+					"name" : "n3",
+					"range" : "range",
+					"tau" : "g2",
+					"bias" : "0",
+					"gain" : "1",
+					"conns" : [ "n3", "n4", "n5", "n6" ],
+					"weights" : [ "g18", "g19" , "g20", "g21" ]
+    			},
+				{
+					"name" : "n4",
+					"range" : "range",
+					"tau" : "g3",
+					"bias" : "0",
+					"gain" : "1",
+					"conns" : [ "n4", "n5","n6", "n7" ],
+					"weights" : [ "g22","g23","g24", "g25" ]
+    			},
+				{
+					"name" : "n5",
+					"range" : "range",
+					"tau" : "g4",
+					"bias" : "0",
+					"gain" : "1",
+					"conns" : [ "n5", "n6","n7", "n8" ],
+					"weights" : [ "g26","g27","g28", "g29" ]
+    			},{
+					"name" : "n6",
+					"range" : "range",
+					"tau" : "g5",
+					"bias" : "0",
+					"gain" : "1",
+					"conns" : [ "n6", "n7", "n8", "n9" ],
+					"weights" : [ "g30", "g31" , "g32", "g33" ]
+				},
+				{
+					"name" : "n7",
+					"range" : "range",
+					"tau" : "g6",
+					"bias" : "0",
+					"gain" : "1",
+					"conns" : [ "n7", "n8", "n9", "n10" ],
+					"weights" : [ "g34","g35" , "g36", "g37"]
+    			},
+				{
+					"name" : "n8",
+					"range" : "range",
+					"tau" : "g7",
+					"bias" : "0",
+					"gain" : "1",
+					"conns" : [ "n8", "n9", "n10", "n1" ],
+					"weights" : [ "g38", "g39" , "g40", "g41" ]
+    			},
+				{
+					"name" : "n9",
+					"range" : "range",
+					"tau" : "g8",
+					"bias" : "0",
+					"gain" : "1",
+					"conns" : [ "n9", "n10","n1", "n2" ],
+					"weights" : [ "g42","g43","g44", "g45" ]
+    			},
+				{
+					"name" : "n10",
+					"range" : "range",
+					"tau" : "g9",
+					"bias" : "0",
+					"gain" : "1",
+					"conns" : [ "n10", "n1","n2", "n3" ],
+					"weights" : [ "g46","g47","g48", "g49" ]
+    			}
+			]
+		}
+	]
+}

@@ -1,0 +1,26 @@
+Parameters
+	5node_saw_notests
+	/home/miles/workspace/Summer Project/BatchRunner/experiments/15-08-25 162521_5node_saw_notests
+GA Length
+	total_runs=10
+	input_generations_per_run=0
+	model_generations_per_run=20
+GA Properties
+	population=100
+	mutation_rate=0.4
+	crossover_probability=0.05
+	deme_size=5
+Net Properties
+	target_network_file=/home/miles/workspace/Summer Project/BatchRunner/networks/5nodefixednetwork.json
+	evolved_network_file=/home/miles/workspace/Summer Project/BatchRunner/networks/5nodeevolvablenetwork.json
+	time_step=0.01
+	run_length_steps=500
+	network_input_index=0
+	network_output_index=4
+Input Properties
+	input_provider_classname=SAWTOOTH
+	parameters=[250.0, 0.5]
+Model Properties
+	derivative_depth=5
+	exponential_penalty=2
+

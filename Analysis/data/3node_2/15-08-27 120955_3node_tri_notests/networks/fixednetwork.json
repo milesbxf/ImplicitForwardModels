@@ -1,0 +1,65 @@
+ {
+	"metadata" : {
+		"description" : "A simple three neuron oscillating network.",
+		"author" : "Miles",
+		"date" : "June 2015"
+	},
+	"ranges" : 
+	[
+			{
+				"name" : "range",
+				"tauRange" : {
+					"low" : 1,
+					"high" : 50
+		    	},
+			    "biasRange" : {
+			    	"low" : -16,
+			    	"high" : 50
+			    },
+				"gainRange" : {
+					"low" : 1,
+					"high" : 10
+			    },
+			    "weightRange" : {
+					"low" : -5,
+					"high" : 5
+			    }
+			}
+	],
+	"layers" :
+	[
+		{
+    		"name" : "Neurons",
+    		"neurons" :
+    		[
+    			{
+					"name" : "n1",
+					"range" : "range",
+					"tau" : "1.2",
+					"bias" : "0",
+					"gain" : "1",
+					"conns" : [ "n1", "n2", "n3" ],
+					"weights" : [ "-15.5", "16" , "8" ]
+				},
+				{
+					"name" : "n2",
+					"range" : "range",
+					"tau" : "1.4",
+					"bias" : "0",
+					"gain" : "1",
+					"conns" : [ "n1", "n2", "n3" ],
+					"weights" : ["-15.5", "-15.5", "16" ]
+    			},
+				{
+					"name" : "n3",
+					"range" : "range",
+					"tau" : "1",
+					"bias" : "0",
+					"gain" : "1",
+					"conns" : ["n1", "n2", "n3" ],
+					"weights" : [ "-15.5", "-15.5", "16"]
+    			}
+			]
+		}
+	]
+}
