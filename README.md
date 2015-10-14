@@ -21,7 +21,7 @@ This package contains all source code, compiled binaries and experimental data f
 ##Folders
 
 /Analysis/ - contains all the experimental data output and a single IPython notebook demonstrating the analysis.
-	- the Implicit forward models.ipynb is the actual notebook, will require IPython Notebook (using Anaconda or other scientific Python distribution), or an online version can be viewed without at http://nbviewer.ipython.org/github/mbryantlibrary/ImplicitForwardModels/blob/master/Analysis/Implicit\%20forward\%20models.ipynb .
+	- the Implicit forward models.ipynb is the actual notebook, will require IPython Notebook (using Anaconda or other scientific Python distribution): [view using GitHub](https://github.com/mbryantlibrary/ImplicitForwardModels/blob/master/Analysis/Implicit%20forward%20models.ipynb)
 	- Alternatively a HTML and PDF files of the notebook are in the same directory
 	- A runnable .py file which contains all the source from the notebook is also included
 
