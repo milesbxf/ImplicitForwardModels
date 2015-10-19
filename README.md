@@ -19,16 +19,19 @@ allowing me to run many experiments overnight. Data analysis was performed with 
 This package contains all source code, compiled binaries and experimental data for my MSc thesis. 
 
 ##Folders
-
-/Analysis/ - contains all the experimental data output and a single IPython notebook demonstrating the analysis.
-	- the Implicit forward models.ipynb is the actual notebook, will require IPython Notebook (using Anaconda or other scientific Python distribution): [view using GitHub](https://github.com/mbryantlibrary/ImplicitForwardModels/blob/master/Analysis/Implicit%20forward%20models.ipynb)
-	- Alternatively a HTML and PDF files of the notebook are in the same directory
-	- A runnable .py file which contains all the source from the notebook is also included
+/Analysis/
+ - contains all the experimental data output and a single IPython notebook demonstrating the analysis.
+ - the Implicit forward models.ipynb is the actual notebook, will require IPython Notebook (using Anaconda or other scientific Python distribution): [view using GitHub](https://github.com/mbryantlibrary/ImplicitForwardModels/blob/master/Analysis/Implicit%20forward%20models.ipynb)
+ - Alternatively a HTML and PDF files of the notebook are in the same directory
+ - A runnable .py file which contains all the source from the notebook is also included
 
 
 /src/ - contains the main Java source code.
+
 /test/ - contains Java JUnit tests.
+
 /lib/ - contains required libraries
+
 /bin/ - Java .class files and a packaged .jar
 
 #To run
